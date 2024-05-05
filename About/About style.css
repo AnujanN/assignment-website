@@ -1,29 +1,34 @@
 body{
     background-color: rgb(250, 243, 243);
     font-family: sans-serif;
-}
-
-.hero {
-    height: 530px;
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(group-discussion2.jpg);
+    font-weight: 0.1;
+    margin: 0;
+    padding: 0;
     background-size: cover;
     background-position: center;
+}
 
+.hero { 
+    height: 550px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(group-discussion2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
+    padding-top: 15px;
+    padding-left: 100px;
     padding-right: 10%;
 }
 
-.logo {
+.logo1 {
     color: white;
-    font-size: 28px;
+    font-size: 40px;
 }
 
 nav span {
@@ -40,6 +45,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 17px;
 }
 
 nav ul li a:hover {
@@ -58,15 +64,19 @@ button {
     font-weight: bold;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .content1{
-    margin-top: 100px;
-    padding-top: 40px;
+    margin-top: 90px;
+    padding-top: 30px;
     padding-left: 37%;
     padding-right: 10%;
 }
 
-.about{
-    font-size: 80px;
+.content1 h1{
+    font-size: 90px;
     color: aliceblue;
 }
 
@@ -74,13 +84,13 @@ button {
     display: flex;
     margin:100px 40px 100px 40px ;
     background-color: rgb(255, 255, 255);
-    background-blend-mode: luminosity;
-    border: 1px groove;
+    background-blend-mode:darken;
+    border-: 1px groove;
 }
   
 .left {
     flex:1;
-    margin:30px 50px 30px 90px ;
+    margin:60px 50px 30px 90px ;
     ma
 }
  
@@ -109,7 +119,14 @@ p{
 
 .container2{
     background-color: white;
+    height: 1070px;
+}
 
+.Team{
+    text-align: justify;
+    padding-left: 260px;
+    padding-right: 260px;
+    font-size: 5px;
 }
 
 .team {
@@ -135,7 +152,7 @@ p{
 
 .container2 h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
@@ -150,16 +167,25 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-right: 465px;
 }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
 
 .person {
     width: 230px;
-    height: 200px;
+    height: 230px;
     margin: 10px;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(250, 243, 243);
 }
 
@@ -179,42 +205,69 @@ p{
 
 
 .container3{
-    background-image: url('group-discussion1.jpg');
-    height: 530px;
+    background-image: url('group-discussion1.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 450px;
     width: 100%;
+    display: grid;
+    place-items: center;
 }
 
-.container2 hr{ 
-    margin-right: 600px;
-    margin-left: 600px;
+.box{
+    width: 400px;
+    height: 100%;
+    justify-content: center;
+    background-color: rgb(250, 243, 243);
+}
+
+.container3 hr{ 
+    margin: 10px 150px 0px 150px;
     border: 2px solid red;
 } 
 
-.box{
-    width: 530px;
+.box p{
+    font-size: 45px;
+    text-align: center;
 }
 
+.i{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.container3 i{
+    font-size: 25px;
+}
+
+.container3 i:hover{
+    color: #ec0e33;
+    cursor: pointer;
+}
 
 .container4 {
     display: flex;
     justify-content: center;
-    width: 100vw;
-    max-width: 1000px; /* Adjust for content width */
+    width: 85vw; 
     margin: 0 auto;
     padding: 20px;
+    margin-bottom: 50px;
 }
 
+
 .services {
-    display: flex;
-    
+    display: flex; 
     justify-content: space-between;
-    width: 100%; /* Make sure all services fit in a row */
+    width: 100%; 
 }
 
 .service {
-    width: 240px; /* Adjust for margin and number of items */
+    width: 240px; 
     text-align: center;
-    border-radius: 5px;
 }
 
 .service img {
@@ -229,5 +282,169 @@ p{
 }
 
 .service p {
-    font-size: 0.8em;
+    font-size: 17px;
 }
+
+
+
+.container5{
+    border-top: 1px solid rgb(224, 221, 221);
+    border-bottom: 1px solid rgb(224, 221, 221);
+    height: 150px;
+    display: grid;
+    place-items: center;
+}
+
+.container5 h2{
+    margin-right: 13%;
+}
+
+.container5 h2:hover{
+    color: #ea1538;
+    cursor: pointer;
+}
+
+
+/*footer*/
+
+.container6{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    margin-left: 120px;
+    margin-right: 130px;
+    padding-top: 2%;
+}
+
+.logo2 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+.container6-1{
+    margin-top: 20px;
+    flex: 40%;
+    width: 100%;
+
+}
+
+.container6-1 h2{
+    font-style: italic;
+}
+
+.container6-1 h2 span{
+    color: #ea1538;
+}
+
+.container6-1 h4{
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.container6-2{
+    margin-top: 40px;
+    flex: 20%;
+    width: 100%;
+}
+
+.container6-2 p{
+    font-size: 20px;
+}
+
+.list{
+    list-style-type: none;
+    font-size:small;
+    padding: 0%;
+    margin-bottom: 10px;
+}
+
+.list li{
+    padding:3px;
+}
+
+.container6-3{
+    margin-top: 40px;
+    flex: 20%;
+    width: 100%;
+}
+
+.container6-3 p{
+    font-size: 20px;
+}
+
+.container6-4{
+    margin-top: 40px;
+    flex: 20%;
+    width: 100%;
+}
+
+.container6-4 p{
+    font-size: 20px;
+}
+
+.container6-4 p input{
+    height: 17px;
+    width: 190px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+footer{
+    display: flex;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    height: 40px;
+    text-align: left;
+    background-color: rgb(250, 243, 243);
+    font-size: 15px;
+    font-weight: lighter;
+    border-top: 1px solid rgb(224, 221, 221);
+}
+
+.copyright{
+    flex: 1;
+}
+
+.i2{
+    margin-left: 800px;
+    flex: 1;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+}
+
+.i2 i:hover{
+    color: #ec0e33;
+    cursor: pointer;
+    font-size: larger;
+}
+
+
+.faq {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+  
+.question {
+     margin-bottom: 20px;
+}
+  
+.question-header {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+  
+.answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.show {
+    display: block;
+} 
